@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный сайт Республики Ингушетия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/region.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <header>
+        <div class="container p-16 d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/logo.svg" alt="" class="mr-12">
+                <div>
+                    <h1 class="main-title">Республика Ингушетия</h1>
+                    <p class="main-desc">ОФициальный портал</p>
+                </div>
+            </div>
+            <nav class="header-menu">
+                <ul class="d-flex align-items-center topmenu">
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Регион</a></li>
+                    <li>
+                        <a href="">Органы власти</a>
+                        <ul class="submenu">
+                            <li><a href="">Глава Республики</a></li>
+                            <li><a href="">Правительство</a></li>
+                            <li><a href="">Парламент</a></li>
+                            <li><a href="">Федеральные органы власти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <div class="d-flex">
+                        <li class="menu-icons">
+                            <img src="../../img/icons/search.svg" alt="Ingushetia search">
+                        </li>
+                        <li class="menu-icons">
+                            <button onclick="openModal()" style="border: none;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 6H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 12H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 18H22" stroke="black" stroke-width="2" />
+                                </svg>
+                            </button>
+
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-40">
+        <div class="container">
+            <h2 class="mb-32">Экономика Ингушетии</h2>
+        </div>
+        <div class="container d-flex w-full  col-xxl-12 economic-page">
+            <div class="main-left col-xxl-9">
+                <div class="page-head d-flex flex-column">
+                    <p>
+                        Становление Республики Ингушетия, как самостоятельного субъекта, начиная с 1992 года, совпало с периодом перехода Российской Федерации 
+                        на рыночные отношения. Несмотря на все трудности, 
+                        возникшие перед молодой республикой, руководству удалось добиться положительных результатов в различных направлениях экономической и социальной сферы.
+                    </p>
+
+                    <p>Инвесторы начали проявлять интерес к экономике Республики Ингушетия. И у нас есть все необходимое, чтобы добиться более высоких результатов. 
+                        Богатая минерально-сырьевая база, 
+                        благоприятные климатические условия, выгодное географическое положение.
+                    </p>
+                    <p>
+                        Ингушетия расположена на склонах Большого Кавказского хребта в зоне благоприятных климатических условий. Сырьевая база республики представлена месторождениями 
+                        нефти и газа, мраморных известняков, доломитов, нерудных строительных материалов и кирпичных глин высокого качества, минеральных и родниковых вод. Важный 
+                        природный ресурс Ингушетии-леса. Они занимают 140 тыс. га, в основном смешанные широколиственные, включающие ценные породы деревьев (бук, дуб, чинар и др.). 
+                        Общий запас древесины составляет около 11 млн. м3. Почвы республики черноземные, плодородные. Климат континентальный. Природно-климатические условия благоприятны для развития сельского хозяйства. 
+                        Республика располагает значительным гидроэнергетическим потенциалом, величина которого по предварительным расчетам составляет около 1,5 млрд. кВт/ч.
+                    </p>
+                </div>
+
+                <div class="economic-table w-100">
+                    <table class="w-100"> 
+                        <thead>
+                            <tr>
+                                <th>Виды экономической деятельности</th>
+                                <th>2019 год</th>
+                                <th>2020 год</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ВРП</td>
+                                <td>100,0</td>
+                                <td>100,0</td>
+                            </tr>
+                            <tr>
+                                <td>Сельское, лесное хозяйство, охота, рыболовство и рыбоводство</td>
+                                <td>2,7</td>
+                                <td>3,1</td>
+                            </tr>
+                            <tr>
+                                <td>Добыча полезных ископаемых</td>
+                                <td>0,2</td>
+                                <td>0,2</td>
+                            </tr>
+                            <tr>
+                                <td>Обрабатывающие производства</td>
+                                <td>18,5</td>
+                                <td>20,8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <p>
+                        Первостепенными задачами инвестиционной политики руководства республики являются снижение инвестиционных рисков, совершенствование системы правового регулирования по защите прав инвесторов, создание оптимальных условий для вложения отечественного и зарубежного капитала в приоритетные отрасли экономики за счет предоставления государственной поддержки по наиболее эффективным инвестиционным проектам.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="main-right  ml-32">
+                <div class="d-flex flex-column mb-32 region-links">
+                    <ul class="region-pager">
+                        <li><a href="region.html">О Республике</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li class="active"><a href="economic.html">Экономика</a></li>
+                        <li><a href="municipality.html">Муниципальные образования</a></li>
+                        <li><a href="">Социально-экономическое развитие</a></li>
+                        <li><a href="">Реализация стратегических инициатив Президента РФ</a></li>
+                        <li><a href="">Поддержка семей военнослужащих</a></li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container p-32">
+            <div class="d-flex justify-content-between mb-32" style="border-bottom: 2px solid #6C6C6C;">
+                <div>
+                    <h3 class="mb-24">ОРГАНЫ ВЛАСТИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Глава Республики</a>
+                        </li>
+                        <li>
+                            <a href="">Народное собрание</a>
+                        </li>
+                        <li>
+                            <a href="">Правительство РИ</a>
+                        </li>
+                        <li>
+                            <a href="">Федеральные органы власти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">РЕГИОН</h3>
+                    <ul>
+                        <li>
+                            <a href="">Государственная символика, гимн</a>
+                        </li>
+                        <li>
+                            <a href="">Правовой статус и правовое устройство</a>
+                        </li>
+                        <li>
+                            <a href="">Географическое положение и прир. ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Население и трудовые ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Промышленность и сельское хозяйство</a>
+                        </li>
+                        <li>
+                            <a href="">Инвестиционная привлекательность</a>
+                        </li>
+                        <li>
+                            <a href="">Культура и история</a>
+                        </li>
+                        <li>
+                            <a href="">Исторический формуляр</a>
+                        </li>
+                        <li>
+                            <a href="">Штандарт Главы Республики Ингушетия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДЛЯ СМИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Фоторепортажи</a>
+                        </li>
+                        <li>
+                            <a href="">Видеорепортажи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДОКУМЕНТЫ</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Постановления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Указы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Распоряжения</a>
+                        </li>
+                        <li>
+                            <a href="">Другие</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex aligh-items-center justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <img src="../../img/logo.svg" alt="" class="mr-12">
+                    <div>
+                        <h1 class="main-title">Республика Ингушетия</h1>
+                        <p class="main-desc">ОФициальный портал</p>
+                    </div>
+                </div>
+                <button class="support-button">
+                    ЗАДАТЬ ВОПРОС
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/accordion.js"></script>
+</body>
+
+</html>

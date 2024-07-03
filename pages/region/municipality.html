@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный сайт Республики Ингушетия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/region.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <header>
+        <div class="container p-16 d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/logo.svg" alt="" class="mr-12">
+                <div>
+                    <h1 class="main-title">Республика Ингушетия</h1>
+                    <p class="main-desc">ОФициальный портал</p>
+                </div>
+            </div>
+            <nav class="header-menu">
+                <ul class="d-flex align-items-center topmenu">
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Регион</a></li>
+                    <li>
+                        <a href="">Органы власти</a>
+                        <ul class="submenu">
+                            <li><a href="">Глава Республики</a></li>
+                            <li><a href="">Правительство</a></li>
+                            <li><a href="">Парламент</a></li>
+                            <li><a href="">Федеральные органы власти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <div class="d-flex">
+                        <li class="menu-icons">
+                            <img src="../../img/icons/search.svg" alt="Ingushetia search">
+                        </li>
+                        <li class="menu-icons">
+                            <button onclick="openModal()" style="border: none;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 6H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 12H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 18H22" stroke="black" stroke-width="2" />
+                                </svg>
+                            </button>
+
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-40">
+        <div class="container">
+            <h2 class="mb-32">Муниципальные образования</h2>
+        </div>
+        <div class="container d-flex w-full  col-xxl-12 municipality-page">
+            <div class="main-left col-xxl-9">
+                <div class="page-head d-flex flex-column w-100">
+                    <div style="position:relative;" class="w-100">
+                        <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+                        <a href="https://yandex.ru/maps/?ll=45.143586%2C43.116569&utm_medium=mapframe&utm_source=maps&z=9.78"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?ll=44.836479%2C43.116569&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA2MRI10KDQvtGB0YHQuNGPLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQmNC90LPRg9GI0LXRgtC40Y8iCg3mNzRCFRRqLEI%2C&z=9.78"
+                            frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+
+                <div class="mb-32 mt-32">
+                    <p>
+                        Республика была последним субъектом Федерации, в котором были образованы органы местного
+                        самоуправления, это произошло лишь в 2009 году.
+                        Тогда были созданы 4 городских округа, 4 муниципальных района и 38 сельских поселений, одно из
+                        которых в 2015 году получило статус городского поселения, а в конце
+                        2016 года преобразовано в городской округ. Ещё одно в 2010 году ликвидировано путём
+                        присоединения к другому сельскому поселению.
+                    </p>
+                </div>
+
+                <div class="cities mb-32">
+                    <h3 class="mb-24">Городские округа</h2>
+                        <ul>
+                            <li onclick="openRegionModal()">
+                                <div>
+                                    <h4>Магас</h4>
+                                    <span>24 550 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Назрань</h4>
+                                    <span>135 300 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Сунжа</h4>
+                                    <span>38 340 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Малгобек</h4>
+                                    <span>79 200 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Карабулак</h4>
+                                    <span>43 850 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="municipalities-items mb-32">
+                    <h3 class="mb-24">Муниципальные районы</h2>
+                        <ul>
+                            <li>
+                                <div>
+                                    <h4>Назрановский район</h4>
+                                    <span>248 900 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Сунженский район</h4>
+                                    <span>98 350 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Малгобекский район </h4>
+                                    <span>125 400 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+                            <li>
+                                <div>
+                                    <h4>Джейрахский район</h4>
+                                    <span>48 250 чел.</span>
+                                </div>
+                                <img src="../../img/icons/arrow grey.svg" alt="">
+                            </li>
+
+                        </ul>
+                </div>
+
+            </div>
+            <div class="main-right  ml-32">
+                <div class="d-flex flex-column mb-32 region-links">
+                    <ul class="region-pager">
+                        <li><a href="region.html">О Республике</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="economic.html">Экономика</a></li>
+                        <li class="active"><a href="">Муниципальные образования</a></li>
+                        <li><a href="">Социально-экономическое развитие</a></li>
+                        <li><a href="">Реализация стратегических инициатив Президента РФ</a></li>
+                        <li><a href="">Поддержка семей военнослужащих</a></li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container p-32">
+            <div class="d-flex justify-content-between mb-32" style="border-bottom: 2px solid #6C6C6C;">
+                <div>
+                    <h3 class="mb-24">ОРГАНЫ ВЛАСТИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Глава Республики</a>
+                        </li>
+                        <li>
+                            <a href="">Народное собрание</a>
+                        </li>
+                        <li>
+                            <a href="">Правительство РИ</a>
+                        </li>
+                        <li>
+                            <a href="">Федеральные органы власти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">РЕГИОН</h3>
+                    <ul>
+                        <li>
+                            <a href="">Государственная символика, гимн</a>
+                        </li>
+                        <li>
+                            <a href="">Правовой статус и правовое устройство</a>
+                        </li>
+                        <li>
+                            <a href="">Географическое положение и прир. ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Население и трудовые ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Промышленность и сельское хозяйство</a>
+                        </li>
+                        <li>
+                            <a href="">Инвестиционная привлекательность</a>
+                        </li>
+                        <li>
+                            <a href="">Культура и история</a>
+                        </li>
+                        <li>
+                            <a href="">Исторический формуляр</a>
+                        </li>
+                        <li>
+                            <a href="">Штандарт Главы Республики Ингушетия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДЛЯ СМИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Фоторепортажи</a>
+                        </li>
+                        <li>
+                            <a href="">Видеорепортажи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДОКУМЕНТЫ</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Постановления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Указы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Распоряжения</a>
+                        </li>
+                        <li>
+                            <a href="">Другие</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex aligh-items-center justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <img src="../../img/logo.svg" alt="" class="mr-12">
+                    <div>
+                        <h1 class="main-title">Республика Ингушетия</h1>
+                        <p class="main-desc">ОФициальный портал</p>
+                    </div>
+                </div>
+                <button class="support-button">
+                    ЗАДАТЬ ВОПРОС
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="d-flex justify-content-center modal-section">
+        <div class="main-modal col-7 p-32" id="regionModal">
+
+            <div class="modal-head w-100 d-flex aligh-items-center justify-content-between mb-40">
+                <p class="d-flex aligh-items-center">
+                    <a href="">Главная </a>
+                    <span class="ml-12">></span>
+                    <a class="ml-12" href="">Регион</a>
+                    <span class="ml-12">></span>
+                    <a class="ml-12" href="">Муниципальные образования</a>
+                    <span class="ml-12">></span>
+                    <a class="ml-12" href="">Магас</a>
+                </p>
+                <div>
+                    <button class="mr-12"><img src="../../img/icons/Print.png" alt=""></button>
+                    <button onclick="closeModal()"><img src="../../img/icons/Close.png" alt=""></button>
+                </div>
+            </div>
+
+            <div class="city-body d-flex flex-column">
+                <div class="city-title mb-40">
+                    <h3>Город Магас</h3>
+                </div>
+                <div class="d-flex aligh-items-center mb-40 w-100">
+                    <div class="city-logo">
+                        <img src="../../img/image 19.png" alt="Герб города Магас" class="h-100">
+                    </div>
+                    <div class="city-bio pl-32">
+                        <p class="mb-24">
+                            Мага́с (ингуш. Магас) — город на юге России, столица Республики Ингушетия. Самый молодой населённый пункт, 
+                            являющийся административным центром субъекта Российской Федерации.
+                        </p>
+                        <p>
+                            Город республиканского значения, образует одноимённый городской округ. Название «Магас» новой столице Ингушетии дано, исходя из научных исторических, археологических и лингвистических данных, 
+                            а также на основе географических наименований местной топонимики.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="city-stat d-flex aligh-items-center justify-content-between">
+                    <div class="stat-item">
+                        <p>12,63 км²</p>
+                        <span>Площадь</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>1994 г</p>
+                        <span>Основан</span>
+                    </div>
+                    <div class="stat-item">
+                        <p>18 640 чел.</p>
+                        <span>Население</span>   
+                    </div>
+                </div>
+
+                <div class="city-head d-flex mb-32">
+                    <div class="head-person-image">
+                        <img src="../../img/dzeyt.jpg" alt="">
+                    </div>
+                    <div class="head-person-info d-flex flex-column">
+                        <h3>Орцханов Зайт Саитович</h3>
+                        <span>Глава г.Магас</span>
+                        <p class="head-bio">Орцханов Зайт Саитович находится на должности мэра г. Магас с 2024 года. Ранее руководил международной IT-компанией Сети и Точки. 
+                            Взял курс на технологизацию республики.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-gallery d-flex flex-wrap mb-24 w-100 municipality-gallery">
+                <img src="../../img/content/magas.webp" class="mr-2" alt="">
+                <img src="../../img/content/magas1" class="mr-2" alt="">
+                <img src="../../img/content/magas2" class="mr-2" alt="">
+                <img src="../../img/content/Magas3.jpg" class="mr-2" alt="">
+                <img src="../../img/content/magas4.jpg" alt="">
+                <img src="../../img/Rectangle 1.png" alt="">
+                <img src="../../img/Rectangle 1.png" alt="">
+                <img src="../../img/Rectangle 1.png" alt="">
+                <img src="../../img/content/magas4.jpg" alt="">
+            </div>
+            
+            <div class="city-contacts">
+                <h4>Контакты администрации</h4>
+                <p>Телефон: <a href="">8 (8732) 49 38 39</a></p>
+                <p>Факс: <a href="">8 (8732) 37 48 94</a></p>
+                <p>Эл. почта: <a href="">magas@ingushtia.ru</a></p>
+                <p>Адрес: г. Магас, ул. Зязикова, 14    </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/accordion.js"></script>
+    <script src="../../js/region.js"></script>
+</body>
+
+</html>

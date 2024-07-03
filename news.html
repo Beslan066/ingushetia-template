@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный сайт Республики Ингушетия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body id="body">
+    <header>
+        <div class="container p-16 d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="img/logo.svg" alt="" class="mr-12">
+                <div>
+                    <h1 class="main-title">Республика Ингушетия</h1>
+                    <p class="main-desc">ОФициальный портал</p>
+                </div>
+            </div>
+            <nav class="header-menu">
+                <ul class="d-flex align-items-center topmenu" >
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Регион</a></li>
+                    <li>
+                        <a href="">Органы власти</a>
+                        <ul class="submenu">
+                            <li><a href="">Глава Республики</a></li>
+                            <li><a href="">Правительство</a></li>
+                            <li><a href="">Парламент</a></li>
+                            <li><a href="">Федеральные органы власти</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <div class="d-flex">
+                        <li class="menu-icons">
+                            <img src="img/icons/search.svg" alt="Ingushetia search">
+                        </li>
+                        <li class="menu-icons">
+                            <button onclick="openModal()" style="border: none;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 6H22" stroke="black" stroke-width="2"/>
+                                    <path d="M2 12H22" stroke="black" stroke-width="2"/>
+                                    <path d="M2 18H22" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </button>
+                            
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-40">
+        <div class="container">
+            <h2 class="mb-40">Новости</h2>
+        </div>
+        <div class="container d-flex w-full  col-xxl-12 news-page">
+            <div class="main-left col-xxl-9">
+                <div class="main-materials  mr-8">
+                    <div class="main-material position-relative">
+                        <img src="img/Rectangle 1.png" alt="Main material" class="w-100">
+                        <div class="flex position-absolute w-100 flex-col  pl-40 pr-40 bottom-25">
+                            <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                            <a href="">
+                                <h2 class="main-material-title">Количество туристов в 2023 году увеличилось на 24% по данным ИСТ</h2>
+                            </a>
+                            <div class="w-100 slider-buttons absolute d-flex justify-content-center bottom-12">
+                                <button class="active"></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>
+                                <button></button>   
+                                <button></button>       
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filtered-news w-full d-flex mt-40 flex-column">
+
+                        <div class="filter-items d-flex justify-content-between aligh-items-center">
+                            <div class="d-flex aligh-items-center ">
+                                <button class="active">Общество</button>
+                                <button>Образование</button>
+                                <button>Экономика</button>
+                                <button>Наука</button>
+                                <button>Спорт</button>
+                                <button>Туризм</button>
+                            </div>
+                            <div class="filter-icon-button">
+                                <button>
+                                    <img src="img/icons/Filter.svg" alt="Ingushetia news filter">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="filter-body d-flex aligh-items-center mb-24">
+                            <div class="d-flex aligh-items-center">
+                                <select name="" id="" placeholder="Период, с" class="mr-12">
+                                    <option value="">Период, с</option>
+                                </select>
+                                <p>-</p>
+                                <select name="" id="" placeholder="Период, до" class="mr-12">
+                                    <option value="">Период, до     </option>
+                                </select>
+                            </div>
+                            <div class="d-flex aligh-items-center">
+                                <button class="mr-12">Применить</buttton>
+                                <button>Очистить</buttton>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap">
+                            <div class="d-flex news-row news-image-row">
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-image">
+                                        <img src="img/Rectangle 1.png" alt="" class="w-100 h-100">
+                                    </div>
+        
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Глава республики посетил открытие новой школы</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-image">
+                                        <img class="w-100 h-100" src="img/content/image 7 (2).png" alt="">
+                                    </div>
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>НИИ Ингушетии представели новый дрон для сельского хозяйства</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-image">
+                                        <img class="w-100" src="img/content/image 7 (3).png" alt="">
+                                    </div>
+        
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap news-row">
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="filtered-news-item col-4">
+                                    <div class="news-text">
+                                        <p class="news-date">27 июня <span class="news-category ml-4">Проекты</span></p>
+                                        <a href="">
+                                            <h4>Курорт “Армхи” будет полностью обновлен к 2025 году </h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="load-news d-flex justify-content-center w-100">
+                                <button>Показать еще</button>
+                            </div>
+                        </div>
+
+                </div>
+                
+                </div>
+            </div>
+            <div class="main-right  ml-32">
+                <div class="d-flex flex-column mb-32 news-sidebar">
+                    <h4>Популярное</h4>
+                    <div class="news-item">
+                        <p class="news-date text-black mb-4">27 июня <span class="news-category">Проекты</span></p>
+                        <a href="">
+                            <h2>М-А. Калиматов проверил ход восстановительных работ в Карабулаке</h2>
+                        </a>
+                    </div>
+    
+                    <div class="news-item ">
+                        <p class="news-date text-black mb-4">27 июня <span class="news-category">Проекты</span></p>
+                        <a href="">
+                            <h2>В с.п. Сурхахи открылась новая школа на 320 мест</h2>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-date text-black mb-4">26 июня <span class="news-category">Образование</span></p>
+                        <a href="">
+                            <h2>В Яндаре по программе «Развитие образования» построили новый детский сад-ясли</h2>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-date text-black mb-4">25 июня <span class="news-category">Общество</span></p>
+                        <a href="">
+                            <h2>Ингушетия снова в тройке лидеров по ожидаемой продолжительности жизни</h2>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-date text-black mb-4">24 июня <span class="news-category">Общество</span></p>
+                        <a href="">
+                            <h2>Нацпроект помогает: в г. Назрани благоустроят дорогу к двум медицинским учреждениям</h2>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <p class="news-date mb-4 text-black">24 июня <span class="news-category">Образование</span></p>
+                        <a href="">
+                            <h2>В текущем году в Ингушетии капитально отремонтируют 6 школ</h2>
+                        </a>
+                    </div>
+    
+                    <div class="more-news">
+                        <a href="">
+                            <span>Смотреть все</span>
+                            <img src="img/icons/longarrow.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container p-32">
+            <div class="d-flex justify-content-between mb-32" style="border-bottom: 2px solid #6C6C6C;">
+                <div>
+                    <h3 class="mb-24">ОРГАНЫ ВЛАСТИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Глава Республики</a>
+                        </li>
+                        <li>
+                            <a href="">Народное собрание</a>
+                        </li>
+                        <li>
+                            <a href="">Правительство РИ</a>
+                        </li>
+                        <li>
+                            <a href="">Федеральные органы власти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">РЕГИОН</h3>
+                    <ul>
+                        <li>
+                            <a href="">Государственная символика, гимн</a>
+                        </li>
+                        <li>
+                            <a href="">Правовой статус и правовое устройство</a>
+                        </li>
+                        <li>
+                            <a href="">Географическое положение и прир. ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Население и трудовые ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Промышленность и сельское хозяйство</a>
+                        </li>
+                        <li>
+                            <a href="">Инвестиционная привлекательность</a>
+                        </li>
+                        <li>
+                            <a href="">Культура и история</a>
+                        </li>
+                        <li>
+                            <a href="">Исторический формуляр</a>
+                        </li>
+                        <li>
+                            <a href="">Штандарт Главы Республики Ингушетия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДЛЯ СМИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Фоторепортажи</a>
+                        </li>
+                        <li>
+                            <a href="">Видеорепортажи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДОКУМЕНТЫ</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Постановления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Указы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Распоряжения</a>
+                        </li>
+                        <li>
+                            <a href="">Другие</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex aligh-items-center justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <img src="img/logo.svg" alt="" class="mr-12">
+                    <div>
+                        <h1 class="main-title">Республика Ингушетия</h1>
+                        <p class="main-desc">ОФициальный портал</p>
+                    </div>
+                </div>
+                <button class="support-button">
+                    ЗАДАТЬ ВОПРОС
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

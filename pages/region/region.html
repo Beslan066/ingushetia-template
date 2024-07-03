@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Официальный сайт Республики Ингушетия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/region.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="body">
+    <header>
+        <div class="container p-16 d-flex justify-content-between align-items-center">
+            <div class="logo d-flex align-items-center">
+                <img src="../../img/logo.svg" alt="" class="mr-12">
+                <div>
+                    <h1 class="main-title">Республика Ингушетия</h1>
+                    <p class="main-desc">ОФициальный портал</p>
+                </div>
+            </div>
+            <nav class="header-menu">
+                <ul class="d-flex align-items-center topmenu">
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Регион</a></li>
+                    <li>
+                        <a href="">Органы власти</a>
+                        <ul class="submenu">
+                            <li><a href="">Глава Республики</a></li>
+                            <li><a href="">Правительство</a></li>
+                            <li><a href="">Парламент</a></li>
+                            <li><a href="">Федеральные органы власти</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Медиа</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <div class="d-flex">
+                        <li class="menu-icons">
+                            <img src="../../img/icons/search.svg" alt="Ingushetia search">
+                        </li>
+                        <li class="menu-icons">
+                            <button onclick="openModal()" style="border: none;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 6H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 12H22" stroke="black" stroke-width="2" />
+                                    <path d="M2 18H22" stroke="black" stroke-width="2" />
+                                </svg>
+                            </button>
+
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="mt-40">
+        <div class="container">
+            <h2 class="mb-32">О Республике Ингушетия</h2>
+        </div>
+        <div class="container d-flex w-full  col-xxl-12 news-page">
+            <div class="main-left col-xxl-9">
+                <div class="page-head d-flex flex-column">
+                    
+                    <p>
+                        Ингушетия самая молодая республика в составе Российской Федерации, образованная 4 июня 1992
+                        года, расположена на северных
+                        склонах предгорья Большого Кавказского хребта, в центральной его части.
+                    </p>
+
+                    <p>Республика Ингушетия граничит с Северной Осетией и Чеченской Республикой. По территории
+                        республики проходит участок государственной
+                        границы Российской Федерации с Республикой Грузия.
+                    </p>
+                    <p>
+                        В республике насчитывается 4 района, 5 городов республиканского подчинения. Столица —город
+                        Магас.
+                        Климат континентальный. Основная река — Сунжа. Протекают также реки Асса, Фортанга, Армхи,
+                        Гулойхи, Фазтонка, Чемульга. Общая площадь
+                        бассейна рек составляет 3073 км².
+                    </p>
+                </div>
+
+                <div class="region-accordion mb-40">
+                    <section class="drawers">
+                        <div class="accordion-header" data-target="drawer-1">
+                            <span>География</span>
+                            <img src="../../img/icons/Plus.svg" alt="" class="icon">
+                        </div>
+                        <div class="drawer" id="drawer-1">
+                            <div class="drawer-content">
+                                <p>Тер­ри­то­рия И. рас­по­ло­же­на...</p>
+                            </div>
+                        </div>
+                
+                        <div class="accordion-header" data-target="drawer-2">
+                            <span>Рельеф, геология и полезные ископаемые</span>
+                            <img src="../../img/icons/Plus.svg" alt="" class="icon">
+                        </div>
+                        <div class="drawer" id="drawer-2">
+                            <div class="drawer-content">
+                                <p>Важ­ней­шие по­лез­ные ис­ко­пае­мые И. – нефть и при­род­ный газ...</p>
+                            </div>
+                        </div>
+                
+                        <div class="accordion-header" data-target="drawer-3">
+                            <span>Полезные ископаемые</span>
+                            <img src="../../img/icons/Plus.svg" alt="" class="icon">
+                        </div>
+                        <div class="drawer" id="drawer-3">
+                            <div class="drawer-content">
+                                <p>Тер­ри­то­рия И. рас­по­ло­же­на в пре­де­лах склад­ча­то-по­кров­ной сис­те­мы Боль­шо­го Кав­ка­за Аль­пий­ско-Ги­ма­лай­ско­го под­виж­но­го поя­са. 
+                                    Северная часть И. (Тер­ский и Сун­жен­ский хреб­ты, раз­де­лён­ные Ал­хан­чурт­ской до­ли­ной, Че­чен­ская рав­ни­на) на­хо­дит­ся в пре­де­лах 
+                                    Тер­ско-Кас­пий­ско­го пе­ре­до­во­го про­ги­ба (за­пол­нен оли­го­цен-нео­ге­но­вой мо­лас­сой), строе­ние ко­то­ро­го ос­лож­не­но Тер­ским и Сун­жен­ским ва­ла­ми. 
+                                    Тек­то­ническая зо­на северного скло­на Боль­шо­го Кав­ка­за (Чёр­ные го­ры, Па­ст­бищ­ный и Ска­ли­стый хреб­ты) сло­же­на на­клон­но за­ле­гаю­щи­ми шель­фо­вы­ми 
+                                    тер­ри­ген­но-кар­бо­нат­ны­ми от­ло­же­ния­ми верх­ней юры – эо­це­на (гли­на­ми, пес­ча­ни­ка­ми, мер­ге­ля­ми, из­вест­ня­ка­ми, до­ло­ми­та­ми). 
+                                    В осе­вой зо­не (ан­ти­кли­но­рий Бо­ко­во­го хреб­та) раз­ви­та ин­тен­сив­но де­фор­ми­ро­ван­ная чер­но­слан­це­вая фор­ма­ция ниж­ней и сред­ней юры. 
+                                    Гор­ная Ингушетия об­ласть ин­тен­сив­ной сейс­мич­но­сти.
+                                </p>
+                                <img class="w-100" src="../../img/Rectangle 1.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                
+            </div>
+
+            <div class="main-right  ml-32">
+                <div class="d-flex flex-column mb-32 region-links">
+                    <ul class="region-pager">
+                        <li class="active"><a href="region.html">О Республике</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="economic.html">Экономика</a></li>
+                        <li><a href="municipality.html">Муниципальные образования</a></li>
+                        <li><a href="">Социально-экономическое развитие</a></li>
+                        <li><a href="">Реализация стратегических инициатив Президента РФ</a></li>
+                        <li><a href="">Поддержка семей военнослужащих</a></li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container p-32">
+            <div class="d-flex justify-content-between mb-32" style="border-bottom: 2px solid #6C6C6C;">
+                <div>
+                    <h3 class="mb-24">ОРГАНЫ ВЛАСТИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Глава Республики</a>
+                        </li>
+                        <li>
+                            <a href="">Народное собрание</a>
+                        </li>
+                        <li>
+                            <a href="">Правительство РИ</a>
+                        </li>
+                        <li>
+                            <a href="">Федеральные органы власти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">РЕГИОН</h3>
+                    <ul>
+                        <li>
+                            <a href="">Государственная символика, гимн</a>
+                        </li>
+                        <li>
+                            <a href="">Правовой статус и правовое устройство</a>
+                        </li>
+                        <li>
+                            <a href="">Географическое положение и прир. ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Население и трудовые ресурсы</a>
+                        </li>
+                        <li>
+                            <a href="">Промышленность и сельское хозяйство</a>
+                        </li>
+                        <li>
+                            <a href="">Инвестиционная привлекательность</a>
+                        </li>
+                        <li>
+                            <a href="">Культура и история</a>
+                        </li>
+                        <li>
+                            <a href="">Исторический формуляр</a>
+                        </li>
+                        <li>
+                            <a href="">Штандарт Главы Республики Ингушетия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДЛЯ СМИ</h3>
+                    <ul>
+                        <li>
+                            <a href="">Новости</a>
+                        </li>
+                        <li>
+                            <a href="">Фоторепортажи</a>
+                        </li>
+                        <li>
+                            <a href="">Видеорепортажи</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="mb-24">ДОКУМЕНТЫ</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                Постановления
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Указы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Распоряжения</a>
+                        </li>
+                        <li>
+                            <a href="">Другие</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex aligh-items-center justify-content-between">
+                <div class="logo d-flex align-items-center">
+                    <img src="../../img/logo.svg" alt="" class="mr-12">
+                    <div>
+                        <h1 class="main-title">Республика Ингушетия</h1>
+                        <p class="main-desc">ОФициальный портал</p>
+                    </div>
+                </div>
+                <button class="support-button">
+                    ЗАДАТЬ ВОПРОС
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/accordion.js"></script>
+</body>
+
+</html>
